@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		046AB7AE1CF6DD1000D3FF81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7AD1CF6DD1000D3FF81 /* main.m */; };
 		046AB7B11CF6DD1000D3FF81 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7B01CF6DD1000D3FF81 /* AppDelegate.m */; };
-		046AB7B41CF6DD1000D3FF81 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7B31CF6DD1000D3FF81 /* ViewController.m */; };
 		046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046AB7B81CF6DD1000D3FF81 /* Assets.xcassets */; };
 		046AB7C71CF6DD1000D3FF81 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7C61CF6DD1000D3FF81 /* _____Tests.m */; };
 		046AB7D21CF6DD1100D3FF81 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7D11CF6DD1100D3FF81 /* _____UITests.m */; };
+		046AB7E11CF6E6AD00D3FF81 /* LYQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7E01CF6E6AD00D3FF81 /* LYQTabBarController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +37,6 @@
 		046AB7AD1CF6DD1000D3FF81 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		046AB7AF1CF6DD1000D3FF81 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		046AB7B01CF6DD1000D3FF81 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		046AB7B21CF6DD1000D3FF81 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		046AB7B31CF6DD1000D3FF81 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		046AB7B81CF6DD1000D3FF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046AB7BD1CF6DD1000D3FF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046AB7C21CF6DD1000D3FF81 /* 百思不得姐Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +45,8 @@
 		046AB7CD1CF6DD1100D3FF81 /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		046AB7D11CF6DD1100D3FF81 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
 		046AB7D31CF6DD1100D3FF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		046AB7DF1CF6E6AD00D3FF81 /* LYQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTabBarController.h; sourceTree = "<group>"; };
+		046AB7E01CF6E6AD00D3FF81 /* LYQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTabBarController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +99,8 @@
 			children = (
 				046AB7AF1CF6DD1000D3FF81 /* AppDelegate.h */,
 				046AB7B01CF6DD1000D3FF81 /* AppDelegate.m */,
-				046AB7B21CF6DD1000D3FF81 /* ViewController.h */,
-				046AB7B31CF6DD1000D3FF81 /* ViewController.m */,
+				046AB7DF1CF6E6AD00D3FF81 /* LYQTabBarController.h */,
+				046AB7E01CF6E6AD00D3FF81 /* LYQTabBarController.m */,
 				046AB7AC1CF6DD1000D3FF81 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -196,6 +196,7 @@
 		046AB7A11CF6DD1000D3FF81 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LYQ;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = Lu;
 				TargetAttributes = {
@@ -262,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046AB7B41CF6DD1000D3FF81 /* ViewController.m in Sources */,
 				046AB7B11CF6DD1000D3FF81 /* AppDelegate.m in Sources */,
+				046AB7E11CF6E6AD00D3FF81 /* LYQTabBarController.m in Sources */,
 				046AB7AE1CF6DD1000D3FF81 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

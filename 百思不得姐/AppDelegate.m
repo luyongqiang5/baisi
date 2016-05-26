@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "LYQTabBarController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,9 @@
     self.window = [[UIWindow alloc]init];
     self.window.frame = [UIScreen mainScreen].bounds;
     //设置窗口 的跟控制器
-    self.window.rootViewController = [[ViewController alloc]init];
+    LYQTabBarController * tabBarcontroller = [[LYQTabBarController alloc]init];
+    
+    self.window.rootViewController = tabBarcontroller;
     //显示窗口
     [self.window makeKeyAndVisible];
     return YES;

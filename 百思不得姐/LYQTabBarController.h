@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LYQTabBarController.h
 //  百思不得姐
 //
 //  Created by ma c on 16/5/26.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LYQTabBarController : UITabBarController
 
 @end
-
