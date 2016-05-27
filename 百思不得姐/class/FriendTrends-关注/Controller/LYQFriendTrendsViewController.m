@@ -16,6 +16,8 @@
     self.navigationItem.title = @"我的关注";
     //设置导航栏左边的按钮
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithIamge:@"friendsRecommentIcon"highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsRecommentClick)];
+    //设置背景色
+    self.view.backgroundColor = LYQGlobalBg;
 }
 -(void)friendsRecommentClick{
     LYQLogFunc;

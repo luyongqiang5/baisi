@@ -5,6 +5,8 @@
 //  Created by ma c on 16/5/26.
 //  Copyright © 2016年 Lu. All rights reserved.
 //
+/**********************预编译头文件****************************/
+
 /*
     此文件中的头文件可供整个工程使用
     使用时先在工程的Build setting中找prefix Header  在prefix Header右边加上路径（从工程的根文件夹算起）
@@ -35,5 +37,9 @@
  */
 #define LYQLogFunc LYQLog(@"%s", __func__)
 
+//设置项目的基础颜色
+#define LYQRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
+
+#define LYQGlobalBg LYQRGBColor(233,233,233);
 
 #endif /* PrefixHeader_pch */

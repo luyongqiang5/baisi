@@ -20,6 +20,8 @@
         [UIBarButtonItem itemWithIamge:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(mineButtonClick)],
         [UIBarButtonItem itemWithIamge:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(mineMoonButtonClick)]
                                                 ];
+    //设置背景色
+    self.view.backgroundColor = LYQGlobalBg;
 }
 
 -(void)mineButtonClick{

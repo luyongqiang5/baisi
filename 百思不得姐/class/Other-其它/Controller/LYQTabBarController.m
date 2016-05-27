@@ -12,9 +12,10 @@
 #import "LYQFriendTrendsViewController.h"
 #import "LYQMeViewController.h"
 #import "LYQTabBar.h"
+#import "LYQNavigationController.h"
 @implementation LYQTabBarController
--(void)viewDidLoad{
-    [super viewDidLoad];
+
++(void)initialize{
     //通过appearance统一设置所有UITabBarItem的文字属性
     //    方法后面带有UI_APPEARANCE_SELECTOR的方法，都可以通过appearance对象来统一设置
     NSMutableDictionary *arrts = [NSMutableDictionary dictionary];
@@ -27,9 +28,11 @@
     
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:arrts forState:(UIControlStateNormal)];
-    
     [item setTitleTextAttributes:selecteArrts forState:(UIControlStateSelected)];
-    
+}
+
+-(void)viewDidLoad{
+    [super viewDidLoad];
     
     //去掉图片被蓝色渲染 （或在图片框中自己调 ：属性-》Render As-> Origian Image）
     //    UIImage *image = [UIImage imageNamed:@"tabBar_essence_click_icon"];
@@ -42,6 +45,7 @@
     [self setupChildVc:[[LYQMeViewController alloc]init] andTitle:@"我" andImage:@"tabBar_me_icon" andSelectedImage:@"tabBar_me_click_icon"];
     //更换TabBar
     [self setValue:[[LYQTabBar alloc]init] forKey:@"tabBar"];
+    
     
 //    UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeCustom];
 //    [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:(UIControlStateNormal)];
@@ -60,11 +64,14 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];;
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
-    //随机背景色
-    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0];
+    
+    //随机背景色(在这里设置颜色会程序一启动直接创建四个控制器  so不要在这里设置)
+//    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0];
+    
 //    [self addChildViewController:vc];
     //包装一个导航控制器，添加导航控制器为tabbarcontroller的子控制器
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    LYQNavigationController *nav = [[LYQNavigationController alloc]initWithRootViewController:vc];
+    
 //    vc.navigationItem.title = title;
     [self addChildViewController:nav];
 }

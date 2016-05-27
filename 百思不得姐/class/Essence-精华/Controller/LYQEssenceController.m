@@ -9,6 +9,7 @@
 #import "LYQEssenceController.h"
 
 @implementation LYQEssenceController
+
 -(void)viewDidLoad{
     [super viewDidLoad];
     //设置导航栏内容
@@ -22,8 +23,11 @@
 //    [tagButton addTarget:self action:@selector(tagClick) forControlEvents:(UIControlEventTouchUpInside)];
 
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithIamge:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(tagClick)];
+    //设置导航栏左边的按钮文字
+//    self.navigationItem.leftBarButtonItem = [UIBarButtonItem alloc]initWithTitle:@"文字" style:(UIBarButtonItemStyle) target:(nullable id) action:(nullable SEL)
     
-//    self.navigationItem.leftBarButtonItem = [UIBarButtonItem alloc]initWithTitle:@"文字" style:<#(UIBarButtonItemStyle)#> target:<#(nullable id)#> action:<#(nullable SEL)#>
+    //设置背景色
+    self.view.backgroundColor = LYQGlobalBg;
 }
 -(void)tagClick{
     LYQLogFunc;
