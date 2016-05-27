@@ -7,7 +7,7 @@
 //
 
 #import "LYQFriendTrendsViewController.h"
-
+#import "LYQRecommendViewController.h"
 @implementation LYQFriendTrendsViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
@@ -20,6 +20,7 @@
     self.view.backgroundColor = LYQGlobalBg;
 }
 -(void)friendsRecommentClick{
-    LYQLogFunc;
+    LYQRecommendViewController *vc = [[LYQRecommendViewController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 @end

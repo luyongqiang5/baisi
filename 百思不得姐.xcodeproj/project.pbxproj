@@ -22,6 +22,9 @@
 		046AB82A1CF7FD9700D3FF81 /* LYQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8201CF7FD9700D3FF81 /* LYQTabBar.m */; };
 		046AB82D1CF82EDA00D3FF81 /* LYQNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB82C1CF82EDA00D3FF81 /* LYQNavigationController.m */; };
 		046AB82F1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046AB82E1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib */; };
+		046AB8331CF85B7300D3FF81 /* LYQRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8311CF85B7300D3FF81 /* LYQRecommendViewController.m */; };
+		046AB8341CF85B7300D3FF81 /* LYQRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046AB8321CF85B7300D3FF81 /* LYQRecommendViewController.xib */; };
+		EF21209606823E48E72DAE61 /* libPods-百思不得姐Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC90BC83EE173FB84CD4F89 /* libPods-百思不得姐Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +77,12 @@
 		046AB82B1CF82EDA00D3FF81 /* LYQNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQNavigationController.h; sourceTree = "<group>"; };
 		046AB82C1CF82EDA00D3FF81 /* LYQNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQNavigationController.m; sourceTree = "<group>"; };
 		046AB82E1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		046AB8301CF85B7300D3FF81 /* LYQRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendViewController.h; sourceTree = "<group>"; };
+		046AB8311CF85B7300D3FF81 /* LYQRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendViewController.m; sourceTree = "<group>"; };
+		046AB8321CF85B7300D3FF81 /* LYQRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQRecommendViewController.xib; sourceTree = "<group>"; };
+		3FEC9C511EA7E406BCBFB707 /* Pods-百思不得姐Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A3FB279F72912FDA121F3994 /* Pods-百思不得姐Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDC90BC83EE173FB84CD4F89 /* libPods-百思不得姐Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF21209606823E48E72DAE61 /* libPods-百思不得姐Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +118,8 @@
 				046AB7C51CF6DD1000D3FF81 /* 百思不得姐Tests */,
 				046AB7D01CF6DD1100D3FF81 /* 百思不得姐UITests */,
 				046AB7AA1CF6DD1000D3FF81 /* Products */,
+				55AEC667F5C2EA97EA3399FA /* Pods */,
+				07610F5EE4F289E5F8ADF26A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,6 +230,9 @@
 				046AB8011CF7FD9700D3FF81 /* LYQFriendTrendsViewController.h */,
 				046AB8021CF7FD9700D3FF81 /* LYQFriendTrendsViewController.m */,
 				046AB82E1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib */,
+				046AB8301CF85B7300D3FF81 /* LYQRecommendViewController.h */,
+				046AB8311CF85B7300D3FF81 /* LYQRecommendViewController.m */,
+				046AB8321CF85B7300D3FF81 /* LYQRecommendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -347,6 +362,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		07610F5EE4F289E5F8ADF26A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDC90BC83EE173FB84CD4F89 /* libPods-百思不得姐Tests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55AEC667F5C2EA97EA3399FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB279F72912FDA121F3994 /* Pods-百思不得姐Tests.debug.xcconfig */,
+				3FEC9C511EA7E406BCBFB707 /* Pods-百思不得姐Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -371,9 +403,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046AB7D91CF6DD1100D3FF81 /* Build configuration list for PBXNativeTarget "百思不得姐Tests" */;
 			buildPhases = (
+				2DB027AA02DAC54BD88BB8BE /* Check Pods Manifest.lock */,
 				046AB7BE1CF6DD1000D3FF81 /* Sources */,
 				046AB7BF1CF6DD1000D3FF81 /* Frameworks */,
 				046AB7C01CF6DD1000D3FF81 /* Resources */,
+				04DC88694F8A6F7408577DD3 /* Embed Pods Frameworks */,
+				9E94FFAC66C09E4F4D3010C4 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -451,6 +486,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046AB8341CF85B7300D3FF81 /* LYQRecommendViewController.xib in Resources */,
 				046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */,
 				046AB82F1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib in Resources */,
 			);
@@ -472,6 +508,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04DC88694F8A6F7408577DD3 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DB027AA02DAC54BD88BB8BE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9E94FFAC66C09E4F4D3010C4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		046AB7A51CF6DD1000D3FF81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -483,6 +567,7 @@
 				046AB8211CF7FD9700D3FF81 /* LYQEssenceController.m in Sources */,
 				046AB8231CF7FD9700D3FF81 /* LYQMeViewController.m in Sources */,
 				046AB82D1CF82EDA00D3FF81 /* LYQNavigationController.m in Sources */,
+				046AB8331CF85B7300D3FF81 /* LYQRecommendViewController.m in Sources */,
 				046AB8221CF7FD9700D3FF81 /* LYQFriendTrendsViewController.m in Sources */,
 				046AB82A1CF7FD9700D3FF81 /* LYQTabBar.m in Sources */,
 				046AB8281CF7FD9700D3FF81 /* LYQTabBarController.m in Sources */,
@@ -635,6 +720,7 @@
 		};
 		046AB7DA1CF6DD1100D3FF81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FB279F72912FDA121F3994 /* Pods-百思不得姐Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "百思不得姐Tests/Info.plist";
@@ -647,6 +733,7 @@
 		};
 		046AB7DB1CF6DD1100D3FF81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FEC9C511EA7E406BCBFB707 /* Pods-百思不得姐Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "百思不得姐Tests/Info.plist";
@@ -698,6 +785,7 @@
 				046AB7D81CF6DD1100D3FF81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		046AB7D91CF6DD1100D3FF81 /* Build configuration list for PBXNativeTarget "百思不得姐Tests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +794,7 @@
 				046AB7DB1CF6DD1100D3FF81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		046AB7DC1CF6DD1100D3FF81 /* Build configuration list for PBXNativeTarget "百思不得姐UITests" */ = {
 			isa = XCConfigurationList;
@@ -714,6 +803,7 @@
 				046AB7DE1CF6DD1100D3FF81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
