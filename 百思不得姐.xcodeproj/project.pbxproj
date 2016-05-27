@@ -13,6 +13,13 @@
 		046AB7C71CF6DD1000D3FF81 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7C61CF6DD1000D3FF81 /* _____Tests.m */; };
 		046AB7D21CF6DD1100D3FF81 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7D11CF6DD1100D3FF81 /* _____UITests.m */; };
 		046AB7E11CF6E6AD00D3FF81 /* LYQTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7E01CF6E6AD00D3FF81 /* LYQTabBarController.m */; };
+		046AB7E41CF7013B00D3FF81 /* LYQEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7E31CF7013B00D3FF81 /* LYQEssenceController.m */; };
+		046AB7E71CF7015B00D3FF81 /* LYQNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7E61CF7015B00D3FF81 /* LYQNewViewController.m */; };
+		046AB7EA1CF7018F00D3FF81 /* LYQFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7E91CF7018F00D3FF81 /* LYQFriendTrendsViewController.m */; };
+		046AB7ED1CF701B800D3FF81 /* LYQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7EC1CF701B800D3FF81 /* LYQMeViewController.m */; };
+		046AB7F01CF7223700D3FF81 /* LYQTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7EF1CF7223700D3FF81 /* LYQTabBar.m */; };
+		046AB7F31CF7330100D3FF81 /* UIView+LYQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7F21CF7330100D3FF81 /* UIView+LYQExtension.m */; };
+		046AB7F71CF7EFC900D3FF81 /* UIBarButtonItem+LYQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7F61CF7EFC900D3FF81 /* UIBarButtonItem+LYQExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,21 @@
 		046AB7D31CF6DD1100D3FF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046AB7DF1CF6E6AD00D3FF81 /* LYQTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTabBarController.h; sourceTree = "<group>"; };
 		046AB7E01CF6E6AD00D3FF81 /* LYQTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTabBarController.m; sourceTree = "<group>"; };
+		046AB7E21CF7013B00D3FF81 /* LYQEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQEssenceController.h; sourceTree = "<group>"; };
+		046AB7E31CF7013B00D3FF81 /* LYQEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQEssenceController.m; sourceTree = "<group>"; };
+		046AB7E51CF7015B00D3FF81 /* LYQNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQNewViewController.h; sourceTree = "<group>"; };
+		046AB7E61CF7015B00D3FF81 /* LYQNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQNewViewController.m; sourceTree = "<group>"; };
+		046AB7E81CF7018F00D3FF81 /* LYQFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQFriendTrendsViewController.h; sourceTree = "<group>"; };
+		046AB7E91CF7018F00D3FF81 /* LYQFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQFriendTrendsViewController.m; sourceTree = "<group>"; };
+		046AB7EB1CF701B800D3FF81 /* LYQMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQMeViewController.h; sourceTree = "<group>"; };
+		046AB7EC1CF701B800D3FF81 /* LYQMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQMeViewController.m; sourceTree = "<group>"; };
+		046AB7EE1CF7223700D3FF81 /* LYQTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTabBar.h; sourceTree = "<group>"; };
+		046AB7EF1CF7223700D3FF81 /* LYQTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTabBar.m; sourceTree = "<group>"; };
+		046AB7F11CF7330100D3FF81 /* UIView+LYQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LYQExtension.h"; sourceTree = "<group>"; };
+		046AB7F21CF7330100D3FF81 /* UIView+LYQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LYQExtension.m"; sourceTree = "<group>"; };
+		046AB7F41CF7334800D3FF81 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		046AB7F51CF7EFC900D3FF81 /* UIBarButtonItem+LYQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LYQExtension.h"; sourceTree = "<group>"; };
+		046AB7F61CF7EFC900D3FF81 /* UIBarButtonItem+LYQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LYQExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +121,23 @@
 			children = (
 				046AB7AF1CF6DD1000D3FF81 /* AppDelegate.h */,
 				046AB7B01CF6DD1000D3FF81 /* AppDelegate.m */,
+				046AB7F11CF7330100D3FF81 /* UIView+LYQExtension.h */,
+				046AB7F21CF7330100D3FF81 /* UIView+LYQExtension.m */,
+				046AB7F41CF7334800D3FF81 /* PrefixHeader.pch */,
 				046AB7DF1CF6E6AD00D3FF81 /* LYQTabBarController.h */,
 				046AB7E01CF6E6AD00D3FF81 /* LYQTabBarController.m */,
+				046AB7EE1CF7223700D3FF81 /* LYQTabBar.h */,
+				046AB7EF1CF7223700D3FF81 /* LYQTabBar.m */,
+				046AB7F51CF7EFC900D3FF81 /* UIBarButtonItem+LYQExtension.h */,
+				046AB7F61CF7EFC900D3FF81 /* UIBarButtonItem+LYQExtension.m */,
+				046AB7EB1CF701B800D3FF81 /* LYQMeViewController.h */,
+				046AB7EC1CF701B800D3FF81 /* LYQMeViewController.m */,
+				046AB7E81CF7018F00D3FF81 /* LYQFriendTrendsViewController.h */,
+				046AB7E91CF7018F00D3FF81 /* LYQFriendTrendsViewController.m */,
+				046AB7E51CF7015B00D3FF81 /* LYQNewViewController.h */,
+				046AB7E61CF7015B00D3FF81 /* LYQNewViewController.m */,
+				046AB7E21CF7013B00D3FF81 /* LYQEssenceController.h */,
+				046AB7E31CF7013B00D3FF81 /* LYQEssenceController.m */,
 				046AB7AC1CF6DD1000D3FF81 /* Supporting Files */,
 			);
 			path = "百思不得姐";
@@ -263,7 +300,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				046AB7F01CF7223700D3FF81 /* LYQTabBar.m in Sources */,
+				046AB7F31CF7330100D3FF81 /* UIView+LYQExtension.m in Sources */,
+				046AB7E71CF7015B00D3FF81 /* LYQNewViewController.m in Sources */,
 				046AB7B11CF6DD1000D3FF81 /* AppDelegate.m in Sources */,
+				046AB7E41CF7013B00D3FF81 /* LYQEssenceController.m in Sources */,
+				046AB7ED1CF701B800D3FF81 /* LYQMeViewController.m in Sources */,
+				046AB7EA1CF7018F00D3FF81 /* LYQFriendTrendsViewController.m in Sources */,
+				046AB7F71CF7EFC900D3FF81 /* UIBarButtonItem+LYQExtension.m in Sources */,
 				046AB7E11CF6E6AD00D3FF81 /* LYQTabBarController.m in Sources */,
 				046AB7AE1CF6DD1000D3FF81 /* main.m in Sources */,
 			);
@@ -390,6 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lu.-----";
@@ -402,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lu.-----";

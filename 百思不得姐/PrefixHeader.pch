@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  百思不得姐
+//
+//  Created by ma c on 16/5/26.
+//  Copyright © 2016年 Lu. All rights reserved.
+//
+/*
+    此文件中的头文件可供整个工程使用
+    使用时先在工程的Build setting中找prefix Header  在prefix Header右边加上路径（从工程的根文件夹算起）
+ */
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/**
+ *  简化hight，witch，x,y等的调用
+ */
+#import "UIView+LYQExtension.h"
+
+/**
+ *  UIBarButtonItem类的扩展
+ */
+#import "UIBarButtonItem+LYQExtension.h"
+
+/**
+ *  调试阶段NSLog正常输出，如果是发布程序的时候将所有的NSLog替换为空的
+ */
+#ifdef DEBUG
+#define LYQLog(...)NSLog(__VA_ARGS__)
+#else
+#define LYQLog(...)
+#endif
+/**
+ *  打印函数
+ */
+#define LYQLogFunc LYQLog(@"%s", __func__)
+
+
+#endif /* PrefixHeader_pch */
