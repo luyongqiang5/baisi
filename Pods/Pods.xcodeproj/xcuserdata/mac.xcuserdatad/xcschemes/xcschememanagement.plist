@@ -9,7 +9,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-百思不得姐Tests.xcscheme</key>
+		<key>MJExtension.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-百思不得姐.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>14C8E8466BC47068010AE1C9CFDD07D3</key>
+		<key>2BCC4E638319F5E9C0F718E4863F5982</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E7C85BD6B8C7B295E3EEC659628B390</key>
+		<key>83C164EDF2BA8E771CD42B31CEC1F24F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>81902F64F96119EA8AD775981A1784BB</key>
+		<key>8CD40046DA4C2338D00D9918C89605DC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8F74D9EA91F4C43190670066BAC37D44</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>928353533005A4198EBDA5B700D37B64</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B23B3D15FFC0FC9893968F478086D58D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

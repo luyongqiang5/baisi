@@ -25,7 +25,7 @@
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 //     UINavigationBar *bar = [UINavigationBar new];
 //    [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"]  forBarMetrics:UIBarMetricsDefault];
-    LYQLogFunc;
+//    LYQLogFunc;
 }
 
 - (void)viewDidLoad {

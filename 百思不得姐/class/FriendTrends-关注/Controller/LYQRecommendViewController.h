@@ -10,4 +10,5 @@
 
 @interface LYQRecommendViewController : UIViewController
 
+
 @end

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040F0BF11CFC616F00E88D34 /* LYQRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F0BEF1CFC616F00E88D34 /* LYQRecommendUserCell.m */; };
+		040F0BF21CFC616F00E88D34 /* LYQRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040F0BF01CFC616F00E88D34 /* LYQRecommendUserCell.xib */; };
+		040F0BF51CFC6CAC00E88D34 /* LYQRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F0BF41CFC6CAC00E88D34 /* LYQRecommendUser.m */; };
 		046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046AB7B81CF6DD1000D3FF81 /* Assets.xcassets */; };
 		046AB7C71CF6DD1000D3FF81 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7C61CF6DD1000D3FF81 /* _____Tests.m */; };
-		046AB7D21CF6DD1100D3FF81 /* _____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7D11CF6DD1100D3FF81 /* _____UITests.m */; };
 		046AB8211CF7FD9700D3FF81 /* LYQEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7FC1CF7FD9700D3FF81 /* LYQEssenceController.m */; };
 		046AB8221CF7FD9700D3FF81 /* LYQFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8021CF7FD9700D3FF81 /* LYQFriendTrendsViewController.m */; };
 		046AB8231CF7FD9700D3FF81 /* LYQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8081CF7FD9700D3FF81 /* LYQMeViewController.m */; };
@@ -24,6 +26,11 @@
 		046AB82F1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046AB82E1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib */; };
 		046AB8331CF85B7300D3FF81 /* LYQRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8311CF85B7300D3FF81 /* LYQRecommendViewController.m */; };
 		046AB8341CF85B7300D3FF81 /* LYQRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046AB8321CF85B7300D3FF81 /* LYQRecommendViewController.xib */; };
+		04E14D591CFAD45D00C20D62 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E14D581CFAD45D00C20D62 /* Foundation+Log.m */; };
+		04E14D5C1CFADB6500C20D62 /* LYQRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E14D5B1CFADB6500C20D62 /* LYQRecommendCategory.m */; };
+		04E14D601CFAE09000C20D62 /* LYQRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E14D5E1CFAE09000C20D62 /* LYQRecommendCategoryCell.m */; };
+		04E14D611CFAE09000C20D62 /* LYQRecommendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04E14D5F1CFAE09000C20D62 /* LYQRecommendCategoryCell.xib */; };
+		8AF9E05F16BDE93ADB958B8C /* libPods-百思不得姐.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB29B2E0DFF2B67E6BC5DA28 /* libPods-百思不得姐.a */; };
 		EF21209606823E48E72DAE61 /* libPods-百思不得姐Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC90BC83EE173FB84CD4F89 /* libPods-百思不得姐Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +52,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		040F0BEE1CFC616F00E88D34 /* LYQRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendUserCell.h; sourceTree = "<group>"; };
+		040F0BEF1CFC616F00E88D34 /* LYQRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendUserCell.m; sourceTree = "<group>"; };
+		040F0BF01CFC616F00E88D34 /* LYQRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQRecommendUserCell.xib; sourceTree = "<group>"; };
+		040F0BF31CFC6CAC00E88D34 /* LYQRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendUser.h; sourceTree = "<group>"; };
+		040F0BF41CFC6CAC00E88D34 /* LYQRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendUser.m; sourceTree = "<group>"; };
 		046AB7A91CF6DD1000D3FF81 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		046AB7B81CF6DD1000D3FF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046AB7BD1CF6DD1000D3FF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,8 +64,6 @@
 		046AB7C61CF6DD1000D3FF81 /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
 		046AB7C81CF6DD1000D3FF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046AB7CD1CF6DD1100D3FF81 /* 百思不得姐UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		046AB7D11CF6DD1100D3FF81 /* _____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____UITests.m"; sourceTree = "<group>"; };
-		046AB7D31CF6DD1100D3FF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046AB7FB1CF7FD9700D3FF81 /* LYQEssenceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQEssenceController.h; sourceTree = "<group>"; };
 		046AB7FC1CF7FD9700D3FF81 /* LYQEssenceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQEssenceController.m; sourceTree = "<group>"; };
 		046AB8011CF7FD9700D3FF81 /* LYQFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -80,8 +90,15 @@
 		046AB8301CF85B7300D3FF81 /* LYQRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendViewController.h; sourceTree = "<group>"; };
 		046AB8311CF85B7300D3FF81 /* LYQRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendViewController.m; sourceTree = "<group>"; };
 		046AB8321CF85B7300D3FF81 /* LYQRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQRecommendViewController.xib; sourceTree = "<group>"; };
-		3FEC9C511EA7E406BCBFB707 /* Pods-百思不得姐Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A3FB279F72912FDA121F3994 /* Pods-百思不得姐Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		04E14D581CFAD45D00C20D62 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		04E14D5A1CFADB6500C20D62 /* LYQRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendCategory.h; sourceTree = "<group>"; };
+		04E14D5B1CFADB6500C20D62 /* LYQRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendCategory.m; sourceTree = "<group>"; };
+		04E14D5D1CFAE09000C20D62 /* LYQRecommendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendCategoryCell.h; sourceTree = "<group>"; };
+		04E14D5E1CFAE09000C20D62 /* LYQRecommendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendCategoryCell.m; sourceTree = "<group>"; };
+		04E14D5F1CFAE09000C20D62 /* LYQRecommendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQRecommendCategoryCell.xib; sourceTree = "<group>"; };
+		3529A3E76902804B43202EF5 /* Pods-百思不得姐.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.debug.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.debug.xcconfig"; sourceTree = "<group>"; };
+		AB29B2E0DFF2B67E6BC5DA28 /* libPods-百思不得姐.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A8C7ECF8E7A4C0835B45A0 /* Pods-百思不得姐.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-百思不得姐.release.xcconfig"; path = "Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐.release.xcconfig"; sourceTree = "<group>"; };
 		CDC90BC83EE173FB84CD4F89 /* libPods-百思不得姐Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-百思不得姐Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -90,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF9E05F16BDE93ADB958B8C /* libPods-百思不得姐.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +134,6 @@
 			children = (
 				046AB7AB1CF6DD1000D3FF81 /* 百思不得姐 */,
 				046AB7C51CF6DD1000D3FF81 /* 百思不得姐Tests */,
-				046AB7D01CF6DD1100D3FF81 /* 百思不得姐UITests */,
 				046AB7AA1CF6DD1000D3FF81 /* Products */,
 				55AEC667F5C2EA97EA3399FA /* Pods */,
 				07610F5EE4F289E5F8ADF26A /* Frameworks */,
@@ -158,15 +175,6 @@
 				046AB7C81CF6DD1000D3FF81 /* Info.plist */,
 			);
 			path = "百思不得姐Tests";
-			sourceTree = "<group>";
-		};
-		046AB7D01CF6DD1100D3FF81 /* 百思不得姐UITests */ = {
-			isa = PBXGroup;
-			children = (
-				046AB7D11CF6DD1100D3FF81 /* _____UITests.m */,
-				046AB7D31CF6DD1100D3FF81 /* Info.plist */,
-			);
-			path = "百思不得姐UITests";
 			sourceTree = "<group>";
 		};
 		046AB7F81CF7FD9700D3FF81 /* class */ = {
@@ -240,6 +248,10 @@
 		046AB8031CF7FD9700D3FF81 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				04E14D5A1CFADB6500C20D62 /* LYQRecommendCategory.h */,
+				04E14D5B1CFADB6500C20D62 /* LYQRecommendCategory.m */,
+				040F0BF31CFC6CAC00E88D34 /* LYQRecommendUser.h */,
+				040F0BF41CFC6CAC00E88D34 /* LYQRecommendUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +259,12 @@
 		046AB8041CF7FD9700D3FF81 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04E14D5D1CFAE09000C20D62 /* LYQRecommendCategoryCell.h */,
+				04E14D5E1CFAE09000C20D62 /* LYQRecommendCategoryCell.m */,
+				04E14D5F1CFAE09000C20D62 /* LYQRecommendCategoryCell.xib */,
+				040F0BEE1CFC616F00E88D34 /* LYQRecommendUserCell.h */,
+				040F0BEF1CFC616F00E88D34 /* LYQRecommendUserCell.m */,
+				040F0BF01CFC616F00E88D34 /* LYQRecommendUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +340,7 @@
 			children = (
 				046AB8121CF7FD9700D3FF81 /* AppDelegate.h */,
 				046AB8131CF7FD9700D3FF81 /* AppDelegate.m */,
+				04E14D581CFAD45D00C20D62 /* Foundation+Log.m */,
 				046AB8141CF7FD9700D3FF81 /* Category */,
 				046AB8191CF7FD9700D3FF81 /* Controller */,
 				046AB81C1CF7FD9700D3FF81 /* main.m */,
@@ -366,6 +385,7 @@
 			isa = PBXGroup;
 			children = (
 				CDC90BC83EE173FB84CD4F89 /* libPods-百思不得姐Tests.a */,
+				AB29B2E0DFF2B67E6BC5DA28 /* libPods-百思不得姐.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -373,8 +393,8 @@
 		55AEC667F5C2EA97EA3399FA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A3FB279F72912FDA121F3994 /* Pods-百思不得姐Tests.debug.xcconfig */,
-				3FEC9C511EA7E406BCBFB707 /* Pods-百思不得姐Tests.release.xcconfig */,
+				3529A3E76902804B43202EF5 /* Pods-百思不得姐.debug.xcconfig */,
+				C1A8C7ECF8E7A4C0835B45A0 /* Pods-百思不得姐.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -386,9 +406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 046AB7D61CF6DD1100D3FF81 /* Build configuration list for PBXNativeTarget "百思不得姐" */;
 			buildPhases = (
+				E138BF7E09F4B41A63C39027 /* Check Pods Manifest.lock */,
 				046AB7A51CF6DD1000D3FF81 /* Sources */,
 				046AB7A61CF6DD1000D3FF81 /* Frameworks */,
 				046AB7A71CF6DD1000D3FF81 /* Resources */,
+				2E2DD568FCB5D8CE81E39994 /* Embed Pods Frameworks */,
+				12BB4F5C26F2F7E25697A252 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -488,7 +511,9 @@
 			files = (
 				046AB8341CF85B7300D3FF81 /* LYQRecommendViewController.xib in Resources */,
 				046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */,
+				040F0BF21CFC616F00E88D34 /* LYQRecommendUserCell.xib in Resources */,
 				046AB82F1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib in Resources */,
+				04E14D611CFAE09000C20D62 /* LYQRecommendCategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +549,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		12BB4F5C26F2F7E25697A252 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2DB027AA02DAC54BD88BB8BE /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -537,6 +577,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2E2DD568FCB5D8CE81E39994 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐/Pods-百思不得姐-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9E94FFAC66C09E4F4D3010C4 /* Copy Pods Resources */ = {
@@ -554,6 +609,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-百思不得姐Tests/Pods-百思不得姐Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E138BF7E09F4B41A63C39027 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -561,18 +631,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				040F0BF11CFC616F00E88D34 /* LYQRecommendUserCell.m in Sources */,
 				046AB8271CF7FD9700D3FF81 /* UIView+LYQExtension.m in Sources */,
 				046AB8241CF7FD9700D3FF81 /* LYQNewViewController.m in Sources */,
 				046AB8261CF7FD9700D3FF81 /* UIBarButtonItem+LYQExtension.m in Sources */,
 				046AB8211CF7FD9700D3FF81 /* LYQEssenceController.m in Sources */,
+				040F0BF51CFC6CAC00E88D34 /* LYQRecommendUser.m in Sources */,
 				046AB8231CF7FD9700D3FF81 /* LYQMeViewController.m in Sources */,
 				046AB82D1CF82EDA00D3FF81 /* LYQNavigationController.m in Sources */,
 				046AB8331CF85B7300D3FF81 /* LYQRecommendViewController.m in Sources */,
 				046AB8221CF7FD9700D3FF81 /* LYQFriendTrendsViewController.m in Sources */,
 				046AB82A1CF7FD9700D3FF81 /* LYQTabBar.m in Sources */,
+				04E14D5C1CFADB6500C20D62 /* LYQRecommendCategory.m in Sources */,
 				046AB8281CF7FD9700D3FF81 /* LYQTabBarController.m in Sources */,
+				04E14D591CFAD45D00C20D62 /* Foundation+Log.m in Sources */,
 				046AB8291CF7FD9700D3FF81 /* main.m in Sources */,
 				046AB8251CF7FD9700D3FF81 /* AppDelegate.m in Sources */,
+				04E14D601CFAE09000C20D62 /* LYQRecommendCategoryCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,7 +663,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046AB7D21CF6DD1100D3FF81 /* _____UITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,33 +768,38 @@
 		};
 		046AB7D71CF6DD1100D3FF81 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3529A3E76902804B43202EF5 /* Pods-百思不得姐.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "百思不得姐/class/Other-其它/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lu.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		046AB7D81CF6DD1100D3FF81 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1A8C7ECF8E7A4C0835B45A0 /* Pods-百思不得姐.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				GCC_PREFIX_HEADER = "百思不得姐/class/Other-其它/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lu.-----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
 		046AB7DA1CF6DD1100D3FF81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3FB279F72912FDA121F3994 /* Pods-百思不得姐Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "百思不得姐Tests/Info.plist";
@@ -733,7 +812,6 @@
 		};
 		046AB7DB1CF6DD1100D3FF81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FEC9C511EA7E406BCBFB707 /* Pods-百思不得姐Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = "百思不得姐Tests/Info.plist";
