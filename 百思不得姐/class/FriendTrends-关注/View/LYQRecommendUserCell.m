@@ -23,7 +23,13 @@
 -(void)setUser:(LYQRecommendUser *)user{
     _user = user;
     self.screenNameLabel.text = user.screen_name;
-    self.fansCountLabel.text = [NSString stringWithFormat:@"%zd人关注",user.fans_count];
+    NSString *subNumber = nil;
+    if (user.fans_count < 10000) {
+        subNumber = [NSString stringWithFormat:@"%zd人订阅", user.fans_count];
+    } else { // 大于等于10000
+        subNumber = [NSString stringWithFormat:@"%.1f万人订阅", user.fans_count / 10000.0];
+    }
+    self.fansCountLabel.text = subNumber;
     [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     
 }

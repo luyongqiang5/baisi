@@ -37,9 +37,9 @@
  */
 #define LYQLogFunc LYQLog(@"%s", __func__)
 
-//设置项目的基础颜色
+//设置颜色
 #define LYQRGBColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0];
-
+//设置项目的基础颜色
 #define LYQGlobalBg LYQRGBColor(233,233,233);
 
 #endif /* PrefixHeader_pch */

@@ -162,6 +162,7 @@ static NSString * const LYQUserId = @"user";
         // 提醒
         [SVProgressHUD showErrorWithStatus:@"加载用户数据失败"];
         
+        
         // 结束刷新
         [self.userTableView.mj_header endRefreshing];
     }];

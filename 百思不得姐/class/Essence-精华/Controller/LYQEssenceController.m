@@ -7,7 +7,7 @@
 //
 
 #import "LYQEssenceController.h"
-
+#import "LYQRecommendTagsViewController.h"
 @implementation LYQEssenceController
 
 -(void)viewDidLoad{
@@ -30,7 +30,8 @@
     self.view.backgroundColor = LYQGlobalBg;
 }
 -(void)tagClick{
-    LYQLogFunc;
+    LYQRecommendTagsViewController *tags = [[LYQRecommendTagsViewController alloc]init];
+    [self.navigationController pushViewController:tags animated:YES];
     
 }
 
