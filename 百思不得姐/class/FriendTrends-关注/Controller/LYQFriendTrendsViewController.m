@@ -8,6 +8,7 @@
 
 #import "LYQFriendTrendsViewController.h"
 #import "LYQRecommendViewController.h"
+#import "LYQLoginRegisterViewController.h"
 @implementation LYQFriendTrendsViewController
 -(void)viewDidLoad{
     [super viewDidLoad];
@@ -22,5 +23,9 @@
 -(void)friendsRecommentClick{
     LYQRecommendViewController *vc = [[LYQRecommendViewController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)loginRegister:(id)sender {
+    LYQLoginRegisterViewController *login = [[LYQLoginRegisterViewController alloc]init];
+    [self presentViewController:login animated:YES completion:nil];
 }
 @end

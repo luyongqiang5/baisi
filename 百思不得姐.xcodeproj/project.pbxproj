@@ -14,6 +14,10 @@
 		044F59811D01184F007B83AD /* LYQRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F597F1D01184F007B83AD /* LYQRecommendTagCell.m */; };
 		044F59821D01184F007B83AD /* LYQRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F59801D01184F007B83AD /* LYQRecommendTagCell.xib */; };
 		044F59851D0118CC007B83AD /* LYQRecommendTagsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F59841D0118CC007B83AD /* LYQRecommendTagsViewController.m */; };
+		044F59891D015B8C007B83AD /* LYQLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F59871D015B8C007B83AD /* LYQLoginRegisterViewController.m */; };
+		044F598A1D015B8C007B83AD /* LYQLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F59881D015B8C007B83AD /* LYQLoginRegisterViewController.xib */; };
+		044F598D1D016613007B83AD /* LYQVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F598C1D016613007B83AD /* LYQVerticalButton.m */; };
+		044F59901D02BE8E007B83AD /* LYQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F598F1D02BE8E007B83AD /* LYQTextField.m */; };
 		046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046AB7B81CF6DD1000D3FF81 /* Assets.xcassets */; };
 		046AB7C71CF6DD1000D3FF81 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7C61CF6DD1000D3FF81 /* _____Tests.m */; };
 		046AB8211CF7FD9700D3FF81 /* LYQEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7FC1CF7FD9700D3FF81 /* LYQEssenceController.m */; };
@@ -68,6 +72,13 @@
 		044F59801D01184F007B83AD /* LYQRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQRecommendTagCell.xib; sourceTree = "<group>"; };
 		044F59831D0118CC007B83AD /* LYQRecommendTagsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendTagsViewController.h; sourceTree = "<group>"; };
 		044F59841D0118CC007B83AD /* LYQRecommendTagsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendTagsViewController.m; sourceTree = "<group>"; };
+		044F59861D015B8C007B83AD /* LYQLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQLoginRegisterViewController.h; sourceTree = "<group>"; };
+		044F59871D015B8C007B83AD /* LYQLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQLoginRegisterViewController.m; sourceTree = "<group>"; };
+		044F59881D015B8C007B83AD /* LYQLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		044F598B1D016613007B83AD /* LYQVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQVerticalButton.h; sourceTree = "<group>"; };
+		044F598C1D016613007B83AD /* LYQVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQVerticalButton.m; sourceTree = "<group>"; };
+		044F598E1D02BE8E007B83AD /* LYQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTextField.h; sourceTree = "<group>"; };
+		044F598F1D02BE8E007B83AD /* LYQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTextField.m; sourceTree = "<group>"; };
 		046AB7A91CF6DD1000D3FF81 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		046AB7B81CF6DD1000D3FF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046AB7BD1CF6DD1000D3FF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -259,6 +270,9 @@
 				046AB8301CF85B7300D3FF81 /* LYQRecommendViewController.h */,
 				046AB8311CF85B7300D3FF81 /* LYQRecommendViewController.m */,
 				046AB8321CF85B7300D3FF81 /* LYQRecommendViewController.xib */,
+				044F59861D015B8C007B83AD /* LYQLoginRegisterViewController.h */,
+				044F59871D015B8C007B83AD /* LYQLoginRegisterViewController.m */,
+				044F59881D015B8C007B83AD /* LYQLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,6 +297,10 @@
 				040F0BEE1CFC616F00E88D34 /* LYQRecommendUserCell.h */,
 				040F0BEF1CFC616F00E88D34 /* LYQRecommendUserCell.m */,
 				040F0BF01CFC616F00E88D34 /* LYQRecommendUserCell.xib */,
+				044F598B1D016613007B83AD /* LYQVerticalButton.h */,
+				044F598C1D016613007B83AD /* LYQVerticalButton.m */,
+				044F598E1D02BE8E007B83AD /* LYQTextField.h */,
+				044F598F1D02BE8E007B83AD /* LYQTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -527,6 +545,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044F598A1D015B8C007B83AD /* LYQLoginRegisterViewController.xib in Resources */,
 				044F59821D01184F007B83AD /* LYQRecommendTagCell.xib in Resources */,
 				046AB8341CF85B7300D3FF81 /* LYQRecommendViewController.xib in Resources */,
 				046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */,
@@ -660,10 +679,13 @@
 				040F0BF51CFC6CAC00E88D34 /* LYQRecommendUser.m in Sources */,
 				044F59811D01184F007B83AD /* LYQRecommendTagCell.m in Sources */,
 				046AB8231CF7FD9700D3FF81 /* LYQMeViewController.m in Sources */,
+				044F598D1D016613007B83AD /* LYQVerticalButton.m in Sources */,
 				046AB82D1CF82EDA00D3FF81 /* LYQNavigationController.m in Sources */,
 				046AB8331CF85B7300D3FF81 /* LYQRecommendViewController.m in Sources */,
 				046AB8221CF7FD9700D3FF81 /* LYQFriendTrendsViewController.m in Sources */,
 				046AB82A1CF7FD9700D3FF81 /* LYQTabBar.m in Sources */,
+				044F59901D02BE8E007B83AD /* LYQTextField.m in Sources */,
+				044F59891D015B8C007B83AD /* LYQLoginRegisterViewController.m in Sources */,
 				04E14D5C1CFADB6500C20D62 /* LYQRecommendCategory.m in Sources */,
 				046AB8281CF7FD9700D3FF81 /* LYQTabBarController.m in Sources */,
 				04E14D591CFAD45D00C20D62 /* Foundation+Log.m in Sources */,
