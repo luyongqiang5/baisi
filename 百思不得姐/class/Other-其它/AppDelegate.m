@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LYQTabBarController.h"
+#import "LYQPushGuideView.h"
 
 @interface AppDelegate ()
 
@@ -26,6 +27,8 @@
     self.window.rootViewController = tabBarcontroller;
     //显示窗口
     [self.window makeKeyAndVisible];
+    // 显示推送引导
+    [LYQPushGuideView show];
     return YES;
 }
 

@@ -18,6 +18,8 @@
 		044F598A1D015B8C007B83AD /* LYQLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F59881D015B8C007B83AD /* LYQLoginRegisterViewController.xib */; };
 		044F598D1D016613007B83AD /* LYQVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F598C1D016613007B83AD /* LYQVerticalButton.m */; };
 		044F59901D02BE8E007B83AD /* LYQTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F598F1D02BE8E007B83AD /* LYQTextField.m */; };
+		044F59931D02E545007B83AD /* LYQPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044F59921D02E545007B83AD /* LYQPushGuideView.m */; };
+		044F59951D02E55C007B83AD /* LYQPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 044F59941D02E55C007B83AD /* LYQPushGuideView.xib */; };
 		046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046AB7B81CF6DD1000D3FF81 /* Assets.xcassets */; };
 		046AB7C71CF6DD1000D3FF81 /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7C61CF6DD1000D3FF81 /* _____Tests.m */; };
 		046AB8211CF7FD9700D3FF81 /* LYQEssenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB7FC1CF7FD9700D3FF81 /* LYQEssenceController.m */; };
@@ -79,6 +81,9 @@
 		044F598C1D016613007B83AD /* LYQVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQVerticalButton.m; sourceTree = "<group>"; };
 		044F598E1D02BE8E007B83AD /* LYQTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTextField.h; sourceTree = "<group>"; };
 		044F598F1D02BE8E007B83AD /* LYQTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTextField.m; sourceTree = "<group>"; };
+		044F59911D02E545007B83AD /* LYQPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQPushGuideView.h; sourceTree = "<group>"; };
+		044F59921D02E545007B83AD /* LYQPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQPushGuideView.m; sourceTree = "<group>"; };
+		044F59941D02E55C007B83AD /* LYQPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQPushGuideView.xib; sourceTree = "<group>"; };
 		046AB7A91CF6DD1000D3FF81 /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		046AB7B81CF6DD1000D3FF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		046AB7BD1CF6DD1000D3FF81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -413,6 +418,9 @@
 			children = (
 				046AB81F1CF7FD9700D3FF81 /* LYQTabBar.h */,
 				046AB8201CF7FD9700D3FF81 /* LYQTabBar.m */,
+				044F59911D02E545007B83AD /* LYQPushGuideView.h */,
+				044F59921D02E545007B83AD /* LYQPushGuideView.m */,
+				044F59941D02E55C007B83AD /* LYQPushGuideView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -549,6 +557,7 @@
 				044F59821D01184F007B83AD /* LYQRecommendTagCell.xib in Resources */,
 				046AB8341CF85B7300D3FF81 /* LYQRecommendViewController.xib in Resources */,
 				046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */,
+				044F59951D02E55C007B83AD /* LYQPushGuideView.xib in Resources */,
 				040F0BF21CFC616F00E88D34 /* LYQRecommendUserCell.xib in Resources */,
 				046AB82F1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib in Resources */,
 				04E14D611CFAE09000C20D62 /* LYQRecommendCategoryCell.xib in Resources */,
@@ -681,6 +690,7 @@
 				046AB8231CF7FD9700D3FF81 /* LYQMeViewController.m in Sources */,
 				044F598D1D016613007B83AD /* LYQVerticalButton.m in Sources */,
 				046AB82D1CF82EDA00D3FF81 /* LYQNavigationController.m in Sources */,
+				044F59931D02E545007B83AD /* LYQPushGuideView.m in Sources */,
 				046AB8331CF85B7300D3FF81 /* LYQRecommendViewController.m in Sources */,
 				046AB8221CF7FD9700D3FF81 /* LYQFriendTrendsViewController.m in Sources */,
 				046AB82A1CF7FD9700D3FF81 /* LYQTabBar.m in Sources */,
