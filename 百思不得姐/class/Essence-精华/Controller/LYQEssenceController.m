@@ -14,6 +14,8 @@
 @property (nonatomic, weak) UIView *indicatorView;
 /** 当前选中的按钮 */
 @property (nonatomic, weak) UIButton *selectedButton;
+/** 顶部的所有标签 */
+@property (nonatomic, weak) UIView *titlesView;
 @end
 
 @implementation LYQEssenceController
@@ -24,6 +26,8 @@
     [self setupNav];
     // 设置顶部的标签栏
     [self setupTitlesView];
+    // 底部的scrollView
+    [self setupContentView];
 }
 
 -(void)setupTitlesView{
@@ -80,7 +84,15 @@
         self.indicatorView.centerX = button.centerX;
     }];
 }
-// 设置导航栏
+/**
+ * 底部的scrollView
+ */
+- (void)setupContentView{
+    
+}
+/**
+ 设置导航栏
+ */
 -(void)setupNav{
     //设置导航栏内容
     //设置导航栏的标题
