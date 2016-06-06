@@ -21,6 +21,9 @@
     NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
     // 获得沙盒中存储的版本号
     NSString *sanboxVersion = [[NSUserDefaults standardUserDefaults]stringForKey:key];
+
+    //判断当前版本与以前版本是否相同，不相同显示，相同不显示
+    #warning Version Equal?
     if (![currentVersion isEqualToString: sanboxVersion]) {
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
         
