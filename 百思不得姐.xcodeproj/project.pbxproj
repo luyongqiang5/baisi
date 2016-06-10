@@ -11,6 +11,7 @@
 		040803EB1D0AC37A00F8E7CC /* LYQTopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040803E91D0AC37A00F8E7CC /* LYQTopicCell.m */; };
 		040803EC1D0AC37A00F8E7CC /* LYQTopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040803EA1D0AC37A00F8E7CC /* LYQTopicCell.xib */; };
 		040803EF1D0ACEFD00F8E7CC /* LYQConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 040803EE1D0ACEFD00F8E7CC /* LYQConst.m */; };
+		040803F21D0AF1A000F8E7CC /* NSDate+LYQExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 040803F11D0AF1A000F8E7CC /* NSDate+LYQExtension.m */; };
 		040F0BF11CFC616F00E88D34 /* LYQRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F0BEF1CFC616F00E88D34 /* LYQRecommendUserCell.m */; };
 		040F0BF21CFC616F00E88D34 /* LYQRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040F0BF01CFC616F00E88D34 /* LYQRecommendUserCell.xib */; };
 		040F0BF51CFC6CAC00E88D34 /* LYQRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 040F0BF41CFC6CAC00E88D34 /* LYQRecommendUser.m */; };
@@ -78,6 +79,8 @@
 		040803EA1D0AC37A00F8E7CC /* LYQTopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQTopicCell.xib; sourceTree = "<group>"; };
 		040803ED1D0ACEFD00F8E7CC /* LYQConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQConst.h; sourceTree = "<group>"; };
 		040803EE1D0ACEFD00F8E7CC /* LYQConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQConst.m; sourceTree = "<group>"; };
+		040803F01D0AF1A000F8E7CC /* NSDate+LYQExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LYQExtension.h"; sourceTree = "<group>"; };
+		040803F11D0AF1A000F8E7CC /* NSDate+LYQExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LYQExtension.m"; sourceTree = "<group>"; };
 		040F0BEE1CFC616F00E88D34 /* LYQRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendUserCell.h; sourceTree = "<group>"; };
 		040F0BEF1CFC616F00E88D34 /* LYQRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendUserCell.m; sourceTree = "<group>"; };
 		040F0BF01CFC616F00E88D34 /* LYQRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQRecommendUserCell.xib; sourceTree = "<group>"; };
@@ -439,6 +442,8 @@
 				046AB8161CF7FD9700D3FF81 /* UIBarButtonItem+LYQExtension.m */,
 				046AB8171CF7FD9700D3FF81 /* UIView+LYQExtension.h */,
 				046AB8181CF7FD9700D3FF81 /* UIView+LYQExtension.m */,
+				040803F01D0AF1A000F8E7CC /* NSDate+LYQExtension.h */,
+				040803F11D0AF1A000F8E7CC /* NSDate+LYQExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -745,6 +750,7 @@
 				046AB8331CF85B7300D3FF81 /* LYQRecommendViewController.m in Sources */,
 				046AB8221CF7FD9700D3FF81 /* LYQFriendTrendsViewController.m in Sources */,
 				046AB82A1CF7FD9700D3FF81 /* LYQTabBar.m in Sources */,
+				040803F21D0AF1A000F8E7CC /* NSDate+LYQExtension.m in Sources */,
 				044F59901D02BE8E007B83AD /* LYQTextField.m in Sources */,
 				044F59891D015B8C007B83AD /* LYQLoginRegisterViewController.m in Sources */,
 				040803E71D07FFF000F8E7CC /* LYQTopic.m in Sources */,

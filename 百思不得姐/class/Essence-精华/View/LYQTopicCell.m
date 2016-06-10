@@ -41,16 +41,66 @@
 
 -(void)setTopic:(LYQTopic *)topic{
     _topic = topic;
+    // 设置头像
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image]  placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    // 设置名字
     self.nameLabel.text = topic.name;
+    // 设置帖子的创建时间
     self.createTimeLabel.text = topic.create_time;
     // 设置按钮文字
     [self setupButtonTitle:self.dingButton count:topic.ding placeholder:@"顶"];
     [self setupButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
+//        [self testDate:topic.create_time];^^^^
 }
+//关于时间的代码，这个项目中不用 ^^^^
+- (void)testDate:(NSString *)create_time
+{
+    // 日期格式化类
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    // 设置日期格式(y:年,M:月,d:日,H:时,m:分,s:秒)
+    fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    
+    // 当前时间
+//    NSDate *now = [NSDate date];
+    // 发帖时间
+//    NSDate *create = [fmt dateFromString:create_time];
+    
+//    LYQLog(@"%@", [now deltaFrom:create]);
+    
+    //    // 日历
+    //    NSCalendar *calendar = [NSCalendar currentCalendar];
+    //
+    //    // 比较时间
+    //    NSCalendarUnit unit = NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
+    //    NSDateComponents *cmps = [calendar components:unit fromDate:create toDate:now options:0];
+    //
+    //    LYQLog(@"%@ %@", create, now);
+    //    LYQLog(@"%zd %zd %zd %zd %zd %zd", cmps.year, cmps.month, cmps.day, cmps.hour, cmps.minute, cmps.second);
+    
+    // 获得NSDate的每一个元素
+    //    NSInteger year = [calendar component:NSCalendarUnitYear fromDate:now];
+    //    NSInteger month = [calendar component:NSCalendarUnitMonth fromDate:now];
+    //    NSInteger day = [calendar component:NSCalendarUnitDay fromDate:now];
+    //    NSDateComponents *cmps = [calendar components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:now];
+    //    LYQLog(@"%zd %zd %zd", cmps.year, cmps.month, cmps.day);
+//}
 
+//- (void)testDate:(NSString *)create_time
+//{
+//    // 当前时间
+//    NSDate *now = [NSDate date];
+//
+//    // 发帖时间
+//    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+//    // 设置日期格式(y:年,M:月,d:日,H:时,m:分,s:秒)
+//    fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+//    NSDate *create = [fmt dateFromString:create_time];
+//    NSTimeInterval delta = [now timeIntervalSinceDate:create];
+//}
+//}
+}
 - (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder
 {
     if (count > 10000) {
