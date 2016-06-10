@@ -13,7 +13,7 @@
  */
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
-
+#import "LYQConst.h"
 /**
  *  简化hight，witch，x,y等的调用
  */

@@ -46,20 +46,27 @@
  */
 - (void)setupChildVces
 {
+    LYQWordViewController *word = [[LYQWordViewController alloc] init];
+    word.title = @"段子";
+    [self addChildViewController:word];
+    
     LYQAllViewController *all = [[LYQAllViewController alloc] init];
+    all.title = @"全部";
     [self addChildViewController:all];
     
     LYQVideoViewController *video = [[LYQVideoViewController alloc] init];
+    video.title = @"视频";
     [self addChildViewController:video];
     
     LYQVoiceViewController *voice = [[LYQVoiceViewController alloc] init];
+    voice.title = @"声音";
     [self addChildViewController:voice];
     
     LYQPictureViewController *picture = [[LYQPictureViewController alloc] init];
+    picture.title = @"图片";
     [self addChildViewController:picture];
     
-    LYQWordViewController *word = [[LYQWordViewController alloc] init];
-    [self addChildViewController:word];
+    
 }
 
 -(void)setupTitlesView{
@@ -67,8 +74,8 @@
     UIView *titlesView = [[UIView alloc] init];
     titlesView.backgroundColor = [[UIColor whiteColor]colorWithAlphaComponent:0.7];
     titlesView.width = self.view.width;
-    titlesView.height = 35;
-    titlesView.y = 64;
+    titlesView.height = LYQTitilesViewH;
+    titlesView.y = LYQTitilesViewY;
     [self.view addSubview:titlesView];
     self.titlesView = titlesView;
     // 底部的红色指示器
@@ -79,16 +86,19 @@
     indicatorView.y = titlesView.height - indicatorView.height;
     self.indicatorView = indicatorView;
     // 内部的子标签
-    NSArray *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
-    CGFloat width = titlesView.width / titles.count;
+//    NSArray *titles = @[@"全部", @"视频", @"声音", @"图片", @"段子"];
+    CGFloat width = titlesView.width / self.childViewControllers.count;
     CGFloat height = titlesView.height;
-    for (NSInteger i = 0; i<titles.count; i++) {
+    for (NSInteger i = 0; i<self.childViewControllers.count; i++) {
         UIButton *button = [[UIButton alloc] init];
         button.tag = i;
         button.height = height;
         button.width = width;
         button.x = i * width;
-        [button setTitle:titles[i] forState:UIControlStateNormal];
+        
+        UIViewController *vc = self.childViewControllers[i];
+        [button setTitle:vc.title forState:UIControlStateNormal];
+        
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateDisabled];
         button.titleLabel.font = [UIFont systemFontOfSize:14];
@@ -182,12 +192,14 @@
     vc.view.x = scrollView.contentOffset.x;
     vc.view.y = 0; // 设置控制器view的y值为0(默认是20)
     vc.view.height = scrollView.height; // 设置控制器view的height值为整个屏幕的高度(默认是比屏幕高度少个20)
+   /*子控制器不一定是UITableViewController，所以要放在各个控制器中
     // 设置内边距
     CGFloat bottom = self.tabBarController.tabBar.height;
     CGFloat top = CGRectGetMaxY(self.titlesView.frame);
     vc.tableView.contentInset = UIEdgeInsetsMake(top, 0, bottom, 0);
     // 设置滚动条的内边距
     vc.tableView.scrollIndicatorInsets = vc.tableView.contentInset;
+    */
     [scrollView addSubview:vc.view];
 }
 

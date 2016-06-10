@@ -10,6 +10,9 @@
 #import "LYQTabBarController.h"
 #import "LYQPushGuideView.h"
 
+#import "LYQEssenceController.h"
+#import "LYQFriendTrendsViewController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -29,8 +32,42 @@
     [self.window makeKeyAndVisible];
     // 显示推送引导
     [LYQPushGuideView show];
+ 
+    /**
+     type 该item 唯一标识符
+     localizedTitle ：标题
+     localizedSubtitle：副标题
+     icon：icon图标 可以使用系统类型 也可以使用自定义的图片
+     userInfo：用户信息字典 自定义参数，完成具体功能需求
+     */
+    UIApplicationShortcutIcon *essenceIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_essence_click_icon"];
+    UIApplicationShortcutItem *essenceItem = [[UIApplicationShortcutItem alloc] initWithType:@"item1" localizedTitle:@"精华" localizedSubtitle:@"" icon:essenceIcon userInfo:nil];
+    UIApplicationShortcutIcon *newIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_new_click_icon"];
+    UIApplicationShortcutItem *newItem = [[UIApplicationShortcutItem alloc] initWithType:@"item2" localizedTitle:@"新帖" localizedSubtitle:@"" icon:newIcon userInfo:nil];
+    UIApplicationShortcutIcon *friendTrendsIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_friendTrends_click_icon"];
+    UIApplicationShortcutItem *friendTrendsItem = [[UIApplicationShortcutItem alloc] initWithType:@"item3" localizedTitle:@"关注" localizedSubtitle:@"" icon:friendTrendsIcon userInfo:nil];
+    UIApplicationShortcutIcon *MeIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_me_click_icon"];
+    UIApplicationShortcutItem *MeItem = [[UIApplicationShortcutItem alloc] initWithType:@"item4" localizedTitle:@"我" localizedSubtitle:@"" icon:MeIcon userInfo:nil];
+    /** 将items 添加到app图标 */
+    application.shortcutItems = @[essenceItem,newItem,friendTrendsItem,MeItem];
+    
+    
     return YES;
 }
+
+- (void)application:(UIApplication *)application performActionForShortcutItem:(nonnull UIApplicationShortcutItem *)shortcutItem completionHandler:(nonnull void (^)(BOOL))completionHandler{
+    UITabBarController *tabBarVC = (UITabBarController *)self.window.rootViewController;
+    if([shortcutItem.type isEqualToString:@"item1"]){
+            tabBarVC.selectedIndex = 0;
+        }else if ([shortcutItem.type isEqualToString:@"item2"]){
+            tabBarVC.selectedIndex = 1;
+        }else if ([shortcutItem.type isEqualToString:@"item3"]){
+            tabBarVC.selectedIndex = 2;
+        }else if ([shortcutItem.type isEqualToString:@"item4"]){
+            tabBarVC.selectedIndex = 3;
+        }
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
