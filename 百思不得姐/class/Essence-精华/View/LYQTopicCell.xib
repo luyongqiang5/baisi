@@ -14,6 +14,20 @@
                 <rect key="frame" x="0.0" y="0.0" width="274" height="187"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_AddV_authen" translatesAutoresizingMaskIntoConstraints="NO" id="ctv-cb-0X0" userLabel="加V认证">
+                        <rect key="frame" x="36" y="36" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="CX4-NN-biZ"/>
+                            <constraint firstAttribute="height" constant="14" id="bWv-GC-xRu"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NY6-G2-deE" userLabel="加V认证">
+                        <rect key="frame" x="19" y="20" width="17" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="Afh-CG-08g"/>
+                            <constraint firstAttribute="height" constant="14" id="CmG-za-HEn"/>
+                        </constraints>
+                    </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Chk-lO-a2q" userLabel="头像">
                         <rect key="frame" x="10" y="10" width="35" height="35"/>
                         <constraints>
@@ -152,9 +166,16 @@
                     <constraint firstItem="Chk-lO-a2q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ilU-Ox-rNS"/>
                     <constraint firstItem="hfN-zV-s2t" firstAttribute="leading" secondItem="dVl-My-LF0" secondAttribute="leading" id="j0e-oI-Xi9"/>
                     <constraint firstAttribute="bottom" secondItem="ox8-ab-oaz" secondAttribute="bottom" id="jjY-ob-FWf"/>
+                    <constraint firstItem="ctv-cb-0X0" firstAttribute="trailing" secondItem="Chk-lO-a2q" secondAttribute="trailing" constant="5" id="mlj-9K-QrQ"/>
                     <constraint firstItem="dVl-My-LF0" firstAttribute="top" secondItem="Chk-lO-a2q" secondAttribute="top" id="sUA-sz-S0R"/>
+                    <constraint firstItem="ctv-cb-0X0" firstAttribute="bottom" secondItem="Chk-lO-a2q" secondAttribute="bottom" constant="5" id="yxb-v2-oQQ"/>
                     <constraint firstAttribute="trailing" secondItem="Faz-zD-nlZ" secondAttribute="trailing" constant="10" id="z1T-Th-tIp"/>
                 </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="NY6-G2-deE"/>
+                    </mask>
+                </variation>
             </tableViewCellContentView>
             <connections>
                 <outlet property="caiButton" destination="mtk-6o-wAC" id="LzO-oB-oZ4"/>
@@ -164,11 +185,13 @@
                 <outlet property="nameLabel" destination="dVl-My-LF0" id="Bgr-Hc-Bt2"/>
                 <outlet property="profileImageView" destination="Chk-lO-a2q" id="wGc-M2-jqP"/>
                 <outlet property="shareButton" destination="pjU-bL-sMA" id="NtX-4O-S2W"/>
+                <outlet property="sinaVView" destination="ctv-cb-0X0" id="Jka-EL-IFb"/>
             </connections>
             <point key="canvasLocation" x="157" y="411"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Profile_AddV_authen" width="14" height="14"/>
         <image name="cell-button-line" width="1" height="29"/>
         <image name="cell-content-line" width="299" height="1"/>
         <image name="cellFollowIcon" width="19" height="20"/>

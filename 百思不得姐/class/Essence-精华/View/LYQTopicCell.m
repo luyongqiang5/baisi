@@ -26,6 +26,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 /** 评论 */
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
+/**新浪加V认证*/
+@property (weak, nonatomic) IBOutlet UIImageView *sinaVView;
 
 @end
 
@@ -41,6 +43,10 @@
 
 -(void)setTopic:(LYQTopic *)topic{
     _topic = topic;
+    //测试新浪加V
+//    topic.sina_v = arc4random_uniform(100)%2;
+    //新浪加V
+    self.sinaVView.hidden = !topic.isSina_v;
     // 设置头像
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image]  placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
     // 设置名字

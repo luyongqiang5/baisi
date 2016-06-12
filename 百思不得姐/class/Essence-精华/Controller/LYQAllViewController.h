@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Lu. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "LYQTopicViewController.h"
 
-@interface LYQAllViewController : UITableViewController
+@interface LYQAllViewController:LYQTopicViewController
 
 @end

@@ -40,13 +40,13 @@
      icon：icon图标 可以使用系统类型 也可以使用自定义的图片
      userInfo：用户信息字典 自定义参数，完成具体功能需求
      */
-    UIApplicationShortcutIcon *essenceIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_essence_click_icon"];
+    UIApplicationShortcutIcon *essenceIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_essence_icon"];
     UIApplicationShortcutItem *essenceItem = [[UIApplicationShortcutItem alloc] initWithType:@"item1" localizedTitle:@"精华" localizedSubtitle:@"" icon:essenceIcon userInfo:nil];
-    UIApplicationShortcutIcon *newIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_new_click_icon"];
+    UIApplicationShortcutIcon *newIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_new_icon"];
     UIApplicationShortcutItem *newItem = [[UIApplicationShortcutItem alloc] initWithType:@"item2" localizedTitle:@"新帖" localizedSubtitle:@"" icon:newIcon userInfo:nil];
-    UIApplicationShortcutIcon *friendTrendsIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_friendTrends_click_icon"];
+    UIApplicationShortcutIcon *friendTrendsIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_friendTrends_icon"];
     UIApplicationShortcutItem *friendTrendsItem = [[UIApplicationShortcutItem alloc] initWithType:@"item3" localizedTitle:@"关注" localizedSubtitle:@"" icon:friendTrendsIcon userInfo:nil];
-    UIApplicationShortcutIcon *MeIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_me_click_icon"];
+    UIApplicationShortcutIcon *MeIcon = [UIApplicationShortcutIcon iconWithTemplateImageName:@"tabBar_me_icon"];
     UIApplicationShortcutItem *MeItem = [[UIApplicationShortcutItem alloc] initWithType:@"item4" localizedTitle:@"我" localizedSubtitle:@"" icon:MeIcon userInfo:nil];
     /** 将items 添加到app图标 */
     application.shortcutItems = @[essenceItem,newItem,friendTrendsItem,MeItem];

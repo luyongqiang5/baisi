@@ -48,22 +48,27 @@
 {
     LYQWordViewController *word = [[LYQWordViewController alloc] init];
     word.title = @"段子";
+    word.type = LYQTopicTypeWord;//帖子数据的类型
     [self addChildViewController:word];
     
     LYQAllViewController *all = [[LYQAllViewController alloc] init];
     all.title = @"全部";
+    all.type = LYQTopicTypeAll;//帖子数据的类型
     [self addChildViewController:all];
     
     LYQVideoViewController *video = [[LYQVideoViewController alloc] init];
     video.title = @"视频";
+    video.type = LYQTopicTypeVideo;
     [self addChildViewController:video];
     
     LYQVoiceViewController *voice = [[LYQVoiceViewController alloc] init];
     voice.title = @"声音";
+    voice.type = LYQTopicTypeVoice;
     [self addChildViewController:voice];
     
     LYQPictureViewController *picture = [[LYQPictureViewController alloc] init];
     picture.title = @"图片";
+    picture.type = LYQTopicTypePicture;
     [self addChildViewController:picture];
     
     
