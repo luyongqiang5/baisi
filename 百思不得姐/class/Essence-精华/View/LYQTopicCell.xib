@@ -152,6 +152,12 @@
                             <constraint firstAttribute="bottom" secondItem="sxG-IA-JDB" secondAttribute="bottom" id="xyl-gc-2sL"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加载..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aih-G8-1BO" userLabel="内容文字">
+                        <rect key="frame" x="10" y="55" width="254" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="ox8-ab-oaz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6I0-OI-zAY"/>
@@ -160,9 +166,12 @@
                     <constraint firstAttribute="trailing" secondItem="fhl-RH-XvL" secondAttribute="trailing" id="Htv-Fb-kaW"/>
                     <constraint firstItem="Faz-zD-nlZ" firstAttribute="top" secondItem="dVl-My-LF0" secondAttribute="top" id="Ijn-oN-c9y"/>
                     <constraint firstItem="ox8-ab-oaz" firstAttribute="top" secondItem="fhl-RH-XvL" secondAttribute="bottom" id="JMf-0s-hYj"/>
+                    <constraint firstItem="Aih-G8-1BO" firstAttribute="trailing" secondItem="Faz-zD-nlZ" secondAttribute="trailing" id="OHy-M5-7zJ"/>
                     <constraint firstItem="Chk-lO-a2q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="OXw-sU-AKd"/>
+                    <constraint firstItem="Aih-G8-1BO" firstAttribute="top" secondItem="Chk-lO-a2q" secondAttribute="bottom" constant="10" id="Xie-QZ-aOH"/>
                     <constraint firstItem="fhl-RH-XvL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Y74-WY-YG7"/>
                     <constraint firstItem="hfN-zV-s2t" firstAttribute="bottom" secondItem="Chk-lO-a2q" secondAttribute="bottom" id="dDe-K7-IhQ"/>
+                    <constraint firstItem="Aih-G8-1BO" firstAttribute="leading" secondItem="Chk-lO-a2q" secondAttribute="leading" id="fpl-vS-RJx"/>
                     <constraint firstItem="Chk-lO-a2q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="ilU-Ox-rNS"/>
                     <constraint firstItem="hfN-zV-s2t" firstAttribute="leading" secondItem="dVl-My-LF0" secondAttribute="leading" id="j0e-oI-Xi9"/>
                     <constraint firstAttribute="bottom" secondItem="ox8-ab-oaz" secondAttribute="bottom" id="jjY-ob-FWf"/>
@@ -186,6 +195,7 @@
                 <outlet property="profileImageView" destination="Chk-lO-a2q" id="wGc-M2-jqP"/>
                 <outlet property="shareButton" destination="pjU-bL-sMA" id="NtX-4O-S2W"/>
                 <outlet property="sinaVView" destination="ctv-cb-0X0" id="Jka-EL-IFb"/>
+                <outlet property="text_label" destination="Aih-G8-1BO" id="TfG-Ya-cCG"/>
             </connections>
             <point key="canvasLocation" x="157" y="411"/>
         </tableViewCell>

@@ -9,6 +9,7 @@
 #import "LYQTopicCell.h"
 #import "LYQTopic.h"
 #import <UIImageView+WebCache.h>
+#import "LYQTopicPictureView.h"
 
 @interface LYQTopicCell()
 
@@ -28,11 +29,22 @@
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 /**新浪加V认证*/
 @property (weak, nonatomic) IBOutlet UIImageView *sinaVView;
-
+/**帖子的文字内容*/
+@property (weak, nonatomic) IBOutlet UILabel *text_label;
+/** 图片帖子中间的内容 */
+@property (nonatomic, weak) LYQTopicPictureView            * pictureView;
 @end
 
 @implementation LYQTopicCell
 
+-(LYQTopicPictureView *)pictureView{
+    if (!_pictureView) {
+        LYQTopicPictureView *pictureView = [LYQTopicPictureView pictureView];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
 
 - (void)awakeFromNib
 {
@@ -58,6 +70,15 @@
     [self setupButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
+    
+    //s设置内容文字
+    self.text_label.text = topic.text;
+    
+    if (topic.type == LYQTopicTypePicture) {
+        self.pictureView.topic = topic;
+        self.pictureView.frame = topic.pictureF;
+    }
+    
 //        [self testDate:topic.create_time];^^^^
 }
 //关于时间的代码，这个项目中不用 ^^^^
@@ -118,11 +139,11 @@
 }
 
 -(void)setFrame:(CGRect)frame{
-    static CGFloat margin = 10;
-    frame.origin.x = margin;
-    frame.size.width -= 2 * margin;
-    frame.origin.y += margin;
-    frame.size.height -= margin;
+    
+    frame.origin.x = LYQTopicCellMargin;
+    frame.size.width -= 2 * LYQTopicCellMargin;
+    frame.origin.y += LYQTopicCellMargin;
+    frame.size.height -= LYQTopicCellMargin;
     [super setFrame:frame];
 }
 

@@ -46,7 +46,12 @@
 		046AB82F1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046AB82E1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib */; };
 		046AB8331CF85B7300D3FF81 /* LYQRecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046AB8311CF85B7300D3FF81 /* LYQRecommendViewController.m */; };
 		046AB8341CF85B7300D3FF81 /* LYQRecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 046AB8321CF85B7300D3FF81 /* LYQRecommendViewController.xib */; };
+		0486FBD51D14FCF100E27902 /* LYQShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486FBD31D14FCF100E27902 /* LYQShowPictureViewController.m */; };
+		0486FBD61D14FCF100E27902 /* LYQShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0486FBD41D14FCF100E27902 /* LYQShowPictureViewController.xib */; };
+		0486FBDF1D15024800E27902 /* LYQProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0486FBDE1D15024800E27902 /* LYQProgressView.m */; };
 		0496D1561D0D9CCB0094439F /* LYQTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0496D1551D0D9CCB0094439F /* LYQTopicViewController.m */; };
+		0498E2711D117DCF002FD410 /* LYQTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0498E2701D117DCF002FD410 /* LYQTopicPictureView.m */; };
+		0498E2731D117DF2002FD410 /* LYQTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0498E2721D117DF2002FD410 /* LYQTopicPictureView.xib */; };
 		04E14D591CFAD45D00C20D62 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E14D581CFAD45D00C20D62 /* Foundation+Log.m */; };
 		04E14D5C1CFADB6500C20D62 /* LYQRecommendCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E14D5B1CFADB6500C20D62 /* LYQRecommendCategory.m */; };
 		04E14D601CFAE09000C20D62 /* LYQRecommendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E14D5E1CFAE09000C20D62 /* LYQRecommendCategoryCell.m */; };
@@ -147,8 +152,16 @@
 		046AB8301CF85B7300D3FF81 /* LYQRecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendViewController.h; sourceTree = "<group>"; };
 		046AB8311CF85B7300D3FF81 /* LYQRecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendViewController.m; sourceTree = "<group>"; };
 		046AB8321CF85B7300D3FF81 /* LYQRecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQRecommendViewController.xib; sourceTree = "<group>"; };
+		0486FBD21D14FCF100E27902 /* LYQShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQShowPictureViewController.h; sourceTree = "<group>"; };
+		0486FBD31D14FCF100E27902 /* LYQShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQShowPictureViewController.m; sourceTree = "<group>"; };
+		0486FBD41D14FCF100E27902 /* LYQShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQShowPictureViewController.xib; sourceTree = "<group>"; };
+		0486FBDD1D15024800E27902 /* LYQProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQProgressView.h; sourceTree = "<group>"; };
+		0486FBDE1D15024800E27902 /* LYQProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQProgressView.m; sourceTree = "<group>"; };
 		0496D1541D0D9CCB0094439F /* LYQTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTopicViewController.h; sourceTree = "<group>"; };
 		0496D1551D0D9CCB0094439F /* LYQTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTopicViewController.m; sourceTree = "<group>"; };
+		0498E26F1D117DCE002FD410 /* LYQTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQTopicPictureView.h; sourceTree = "<group>"; };
+		0498E2701D117DCF002FD410 /* LYQTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQTopicPictureView.m; sourceTree = "<group>"; };
+		0498E2721D117DF2002FD410 /* LYQTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LYQTopicPictureView.xib; sourceTree = "<group>"; };
 		04E14D581CFAD45D00C20D62 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		04E14D5A1CFADB6500C20D62 /* LYQRecommendCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYQRecommendCategory.h; sourceTree = "<group>"; };
 		04E14D5B1CFADB6500C20D62 /* LYQRecommendCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYQRecommendCategory.m; sourceTree = "<group>"; };
@@ -277,6 +290,9 @@
 				04675A071D0466D700C08D67 /* LYQPictureViewController.m */,
 				04675A091D0466EF00C08D67 /* LYQWordViewController.h */,
 				04675A0A1D0466EF00C08D67 /* LYQWordViewController.m */,
+				0486FBD21D14FCF100E27902 /* LYQShowPictureViewController.h */,
+				0486FBD31D14FCF100E27902 /* LYQShowPictureViewController.m */,
+				0486FBD41D14FCF100E27902 /* LYQShowPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -301,6 +317,11 @@
 				040803E81D0AC37A00F8E7CC /* LYQTopicCell.h */,
 				040803E91D0AC37A00F8E7CC /* LYQTopicCell.m */,
 				040803EA1D0AC37A00F8E7CC /* LYQTopicCell.xib */,
+				0498E26F1D117DCE002FD410 /* LYQTopicPictureView.h */,
+				0498E2701D117DCF002FD410 /* LYQTopicPictureView.m */,
+				0498E2721D117DF2002FD410 /* LYQTopicPictureView.xib */,
+				0486FBDD1D15024800E27902 /* LYQProgressView.h */,
+				0486FBDE1D15024800E27902 /* LYQProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -609,10 +630,12 @@
 			files = (
 				044F598A1D015B8C007B83AD /* LYQLoginRegisterViewController.xib in Resources */,
 				044F59821D01184F007B83AD /* LYQRecommendTagCell.xib in Resources */,
+				0498E2731D117DF2002FD410 /* LYQTopicPictureView.xib in Resources */,
 				046AB8341CF85B7300D3FF81 /* LYQRecommendViewController.xib in Resources */,
 				046AB7B91CF6DD1000D3FF81 /* Assets.xcassets in Resources */,
 				044F59951D02E55C007B83AD /* LYQPushGuideView.xib in Resources */,
 				040F0BF21CFC616F00E88D34 /* LYQRecommendUserCell.xib in Resources */,
+				0486FBD61D14FCF100E27902 /* LYQShowPictureViewController.xib in Resources */,
 				046AB82F1CF851CB00D3FF81 /* LYQFriendTrendsViewController.xib in Resources */,
 				040803EC1D0AC37A00F8E7CC /* LYQTopicCell.xib in Resources */,
 				04E14D611CFAE09000C20D62 /* LYQRecommendCategoryCell.xib in Resources */,
@@ -737,6 +760,7 @@
 				044F59751D0115A1007B83AD /* LYQRecommendTag.m in Sources */,
 				040803EF1D0ACEFD00F8E7CC /* LYQConst.m in Sources */,
 				0496D1561D0D9CCB0094439F /* LYQTopicViewController.m in Sources */,
+				0498E2711D117DCF002FD410 /* LYQTopicPictureView.m in Sources */,
 				046AB8271CF7FD9700D3FF81 /* UIView+LYQExtension.m in Sources */,
 				04675A021D04669400C08D67 /* LYQVideoViewController.m in Sources */,
 				046AB8241CF7FD9700D3FF81 /* LYQNewViewController.m in Sources */,
@@ -745,6 +769,7 @@
 				04675A0B1D0466EF00C08D67 /* LYQWordViewController.m in Sources */,
 				044F59851D0118CC007B83AD /* LYQRecommendTagsViewController.m in Sources */,
 				040F0BF51CFC6CAC00E88D34 /* LYQRecommendUser.m in Sources */,
+				0486FBDF1D15024800E27902 /* LYQProgressView.m in Sources */,
 				044F59811D01184F007B83AD /* LYQRecommendTagCell.m in Sources */,
 				040803EB1D0AC37A00F8E7CC /* LYQTopicCell.m in Sources */,
 				046759FF1D04667500C08D67 /* LYQAllViewController.m in Sources */,
@@ -767,6 +792,7 @@
 				046AB8251CF7FD9700D3FF81 /* AppDelegate.m in Sources */,
 				04E14D601CFAE09000C20D62 /* LYQRecommendCategoryCell.m in Sources */,
 				04675A051D0466BF00C08D67 /* LYQVoiceViewController.m in Sources */,
+				0486FBD51D14FCF100E27902 /* LYQShowPictureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

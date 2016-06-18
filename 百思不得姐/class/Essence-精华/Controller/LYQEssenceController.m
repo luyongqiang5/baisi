@@ -47,9 +47,11 @@
 - (void)setupChildVces
 {
     LYQWordViewController *word = [[LYQWordViewController alloc] init];
-    word.title = @"段子";
-    word.type = LYQTopicTypeWord;//帖子数据的类型
-    [self addChildViewController:word];
+    
+    LYQPictureViewController *picture = [[LYQPictureViewController alloc] init];
+    picture.title = @"图片";
+    picture.type = LYQTopicTypePicture;
+    [self addChildViewController:picture];
     
     LYQAllViewController *all = [[LYQAllViewController alloc] init];
     all.title = @"全部";
@@ -66,12 +68,9 @@
     voice.type = LYQTopicTypeVoice;
     [self addChildViewController:voice];
     
-    LYQPictureViewController *picture = [[LYQPictureViewController alloc] init];
-    picture.title = @"图片";
-    picture.type = LYQTopicTypePicture;
-    [self addChildViewController:picture];
-    
-    
+    word.title = @"段子";
+    word.type = LYQTopicTypeWord;//帖子数据的类型
+    [self addChildViewController:word];
 }
 
 -(void)setupTitlesView{

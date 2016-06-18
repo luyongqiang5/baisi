@@ -27,8 +27,19 @@
 
 
 #import "LYQTopic.h"
-
+#import <MJExtension.h>
 @implementation LYQTopic
+
+{
+    CGRect _pictureF;
+}
+
++(NSDictionary *)mj_replacedKeyFromPropertyName{
+    return @{@"small_image":@"image0",
+             @"large_image":@"image1",
+             @"middle_image":@"image2",
+             };
+}
 
 - (NSString *)create_time
 {
@@ -60,6 +71,39 @@
     } else { // 非今年
         return _create_time;
     }
+}
+
+-(CGFloat)cellHeight{
+    if (!_cellHeight) {
+        // 文字的最大尺寸
+        CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * LYQTopicCellMargin, MAXFLOAT);
+        
+        CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+        
+        
+        // cell的高度
+        _cellHeight= LYQTopicCellTextY + textH + LYQTopicCellBottomBarH + 2 * LYQTopicCellMargin;
+        //根据帖子的类型处理cell的高度
+        if(self.type == LYQTopicTypePicture){//图片
+            //显示图片的宽度
+            CGFloat pictureW = maxSize.width;
+            //显示图片的高度
+            CGFloat pictureH = self.height / self.width * pictureW;
+            if (pictureH >= XMGTopicCellPictureMaxH) { // 图片高度过长
+                pictureH = XMGTopicCellPictureBreakH;
+                self.bigPicture = YES; // 大图
+            }
+            // 计算图片控件的frame
+            CGFloat pictureX = LYQTopicCellMargin;
+            CGFloat pictureY = LYQTopicCellTextY + textH + LYQTopicCellMargin;
+            _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
+            
+            _cellHeight += pictureH + LYQTopicCellMargin;
+        }
+        
+        
+    }
+    return _cellHeight;
 }
 
 @end

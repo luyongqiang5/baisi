@@ -8,13 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
-    LYQTopicTypeAll = 1,
-    LYQTopicTypePicture = 10,
-    LYQTopicTypeWord = 29,
-    LYQTopicTypeVoice = 31,
-    LYQTopicTypeVideo = 41
-}LYQTopicType;
+
 
 @interface LYQTopicViewController : UITableViewController
 /** 帖子的类型 */

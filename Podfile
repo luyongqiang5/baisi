@@ -9,6 +9,7 @@ pod 'SDWebImage'
 pod 'SVProgressHUD'
 pod 'MJExtension'
 pod ‘MJRefresh'
+pod 'DACircularProgress'
 end
 
 target '百思不得姐Tests' do

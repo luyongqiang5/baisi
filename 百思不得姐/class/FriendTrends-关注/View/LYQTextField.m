@@ -90,4 +90,9 @@ static NSString * const LYQPlacerholderColorKeyPath = @"_placeholderLabel.textCo
     [self setValue:[UIColor grayColor] forKeyPath:LYQPlacerholderColorKeyPath];
     return [super resignFirstResponder];
 }
+
+-(void)setPlacehoderColor:(UIColor *)placehoderColor{
+    _placehoderColor = placehoderColor;
+    [self setValue:placehoderColor forKeyPath:LYQPlacerholderColorKeyPath];
+}
 @end

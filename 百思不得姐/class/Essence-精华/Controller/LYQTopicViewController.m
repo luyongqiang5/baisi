@@ -164,7 +164,18 @@ static NSString * const LYQTopicCellId = @"topic";
 #pragma mark-
 #pragma mark- tableViewdatalite
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
-    return 200;
+    // 取出帖子模型
+    LYQTopic *topic = self.topics[indexPath.row];
+    
+//    // 文字的最大尺寸
+//    CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * LYQTopicCellMargin, MAXFLOAT);
+//    
+//    CGFloat textH = [topic.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+//    
+//    // cell的高度
+//    CGFloat cellH = LYQTopicCellTextY + textH + LYQTopicCellBottomBarH + 2 * LYQTopicCellMargin;
+    
+    return topic.cellHeight;
 }
 
 #pragma mark -
