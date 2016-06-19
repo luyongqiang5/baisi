@@ -45,3 +45,6 @@
 #define LYQGlobalBg LYQRGBColor(233,233,233)
 
 #endif /* PrefixHeader_pch */
+
+#define LYQScreenW [UIScreen mainScreen].bounds.size.width
+#define LYQScreenH [UIScreen mainScreen].bounds.size.height

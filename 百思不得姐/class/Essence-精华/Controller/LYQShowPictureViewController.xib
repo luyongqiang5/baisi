@@ -81,6 +81,7 @@
                 <constraint firstItem="l6p-g8-fds" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qH6-vv-mBc"/>
                 <constraint firstItem="Dhc-xG-tvR" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="sBR-nI-umz"/>
             </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
     <resources>

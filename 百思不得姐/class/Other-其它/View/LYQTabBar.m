@@ -7,6 +7,7 @@
 //
 
 #import "LYQTabBar.h"
+#import "LYQPublishViewController.h"
 @interface LYQTabBar()
 /** 发布按钮 */
 @property (weak,nonatomic) UIButton          * publishButton;
@@ -22,13 +23,19 @@
         UIButton *publishButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:(UIControlStateNormal)];
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:(UIControlStateSelected)];
-        
+        [publishButton addTarget:self action:@selector(publishClick) forControlEvents:(UIControlEventTouchUpInside)];
         publishButton.size = publishButton.currentBackgroundImage.size;
         
         [self addSubview:publishButton];
         self.publishButton = publishButton;
     }
     return self;
+}
+
+-(void)publishClick{
+    LYQPublishViewController *publish = [[LYQPublishViewController alloc]init];
+    //在View中跳转页面和Controller中跳转页面是不一样的*********************
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publish animated:NO completion:nil];
 }
 
 -(void)layoutSubviews{
