@@ -10,7 +10,7 @@ pod 'SVProgressHUD'
 pod 'MJExtension'
 pod ‘MJRefresh'
 pod 'DACircularProgress'
-
+pod 'pop', '~> 1.0.9'
 end
 
 target '百思不得姐Tests' do
