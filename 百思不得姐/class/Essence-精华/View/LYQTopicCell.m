@@ -10,6 +10,8 @@
 #import "LYQTopic.h"
 #import <UIImageView+WebCache.h>
 #import "LYQTopicPictureView.h"
+#import "LYQTopicVoiceView.h"
+#import "LYQTopicVideoView.h"
 
 @interface LYQTopicCell()
 
@@ -33,10 +35,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *text_label;
 /** 图片帖子中间的内容 */
 @property (nonatomic, weak) LYQTopicPictureView            * pictureView;
+/** 声音帖子中间的内容 */
+@property (nonatomic, weak) LYQTopicVoiceView            * voiceView;
+/** 视频帖子中间的内容 */
+@property (nonatomic, weak) LYQTopicVideoView           *videoView;
 @end
 
 @implementation LYQTopicCell
-
+/**初始化帖子中间的内容*/
 -(LYQTopicPictureView *)pictureView{
     if (!_pictureView) {
         LYQTopicPictureView *pictureView = [LYQTopicPictureView pictureView];
@@ -45,9 +51,23 @@
     }
     return _pictureView;
 }
-
-- (void)awakeFromNib
-{
+-(LYQTopicVoiceView *)voiceView{
+    if (!_voiceView) {
+        LYQTopicVoiceView *voiceView = [LYQTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
+}
+- (LYQTopicVideoView *)videoView{
+    if (!_videoView) {
+        LYQTopicVideoView *videoView = [LYQTopicVideoView videoView];
+        [self.contentView addSubview:videoView];
+        _videoView = videoView;
+    }
+    return _videoView;
+}
+- (void)awakeFromNib{
     UIImageView *bgView = [[UIImageView alloc] init];
     bgView.image = [UIImage imageNamed:@"mainCellBackground"];
     self.backgroundView = bgView;
@@ -71,12 +91,31 @@
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
     
-    //s设置内容文字
+    //设置内容文字
     self.text_label.text = topic.text;
     
-    if (topic.type == LYQTopicTypePicture) {
+    if (topic.type == LYQTopicTypePicture) {//图片
+        self.pictureView.hidden = NO;
         self.pictureView.topic = topic;
         self.pictureView.frame = topic.pictureF;
+        self.voiceView.hidden = YES;
+        self.videoView.hidden = YES;
+    }else if (topic.type == LYQTopicTypeVoice) {//声音
+        self.voiceView.hidden = NO;
+        self.voiceView.topic = topic;
+        self.voiceView.frame = topic.voiceF;
+        self.pictureView.hidden = YES;
+        self.videoView.hidden = YES;
+    }else if (topic.type == LYQTopicTypeVideo) { // 视频
+        self.videoView.hidden = NO;
+        self.videoView.topic = topic;
+        self.videoView.frame = topic.videoF;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
+    } else {                                // 段子
+        self.videoView.hidden = YES;
+        self.voiceView.hidden = YES;
+        self.pictureView.hidden = YES;
     }
     
 //        [self testDate:topic.create_time];^^^^

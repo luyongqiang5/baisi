@@ -30,7 +30,7 @@
 @end
 
 @implementation LYQTopicPictureView
-
+/**显示xib 把xib用起来*/
 +(instancetype)pictureView{
     return [[[NSBundle mainBundle]loadNibNamed:NSStringFromClass(self) owner:nil options:nil]lastObject];
 }

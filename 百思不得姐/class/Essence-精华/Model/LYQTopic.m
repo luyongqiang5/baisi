@@ -31,7 +31,7 @@
 @implementation LYQTopic
 
 {
-    CGRect _pictureF;
+//    CGRect _pictureF;
 }
 
 +(NSDictionary *)mj_replacedKeyFromPropertyName{
@@ -97,8 +97,21 @@
             CGFloat pictureX = LYQTopicCellMargin;
             CGFloat pictureY = LYQTopicCellTextY + textH + LYQTopicCellMargin;
             _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
-            
             _cellHeight += pictureH + LYQTopicCellMargin;
+        }else if (self.type == LYQTopicTypeVoice){//声音
+            CGFloat voiceX = LYQTopicCellMargin;
+            CGFloat voiceY = LYQTopicCellTextY + textH + LYQTopicCellMargin;
+            CGFloat voiceW = maxSize.width;
+            CGFloat voiceH = self.height / self.width * voiceW;
+            _voiceF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
+            _cellHeight += voiceH + LYQTopicCellMargin;
+        }else if (self.type == LYQTopicTypeVideo){//视频
+            CGFloat videoX = LYQTopicCellMargin;
+            CGFloat videoY = LYQTopicCellTextY + textH + LYQTopicCellMargin;
+            CGFloat videoW = maxSize.width;
+            CGFloat videoH = self.height / self.width * videoW;
+            _videoF = CGRectMake(videoX, videoY, videoW, videoH);
+            _cellHeight += videoH + LYQTopicCellMargin;
         }
         
         
